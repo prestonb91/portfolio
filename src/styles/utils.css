@@ -1,4 +1,10 @@
 .button {
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
+    padding: 2rem;
+}
+
+.button:hover {
+    color: black;
+    background-color: gray;
 }
