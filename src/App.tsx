@@ -1,8 +1,14 @@
 import Sidebar from "./components/Sidebar";
 import "./styles/utils.css";
-import { Ref } from "react";
+import { useRef } from "react";
 
 function App() {
+
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const stackRef = useRef(null);
+
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth"})
@@ -10,15 +16,18 @@ function App() {
 
     return (
       <>
-      <div className="bg-black flex h-screen">
+      <div className="flex">
         {/* Sidebar */}
-        <Sidebar/>
+        <Sidebar
+          scrollToSection={scrollToSection}
+        />
 
         {/* Main Content */}
-        <div className="w-5/6">
+        <div className="w-9/10">
           {/* About Section */}
           <section
             className="border-2 border-white text-white h-screen"
+            ref={aboutRef}
           >
             <h1>About</h1>
           </section>

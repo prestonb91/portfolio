@@ -3,7 +3,7 @@ function Sidebar() {
     return (
         <>
             <div
-                className="flex flex-col border-2 border-white w-1/6 h-screen fixed"
+                className="flex flex-col border-2 border-white w-1/10 h-screen"
             >
                 <button className="button">About</button>
                 <button className="button">Experience</button>
