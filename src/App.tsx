@@ -1,17 +1,21 @@
-import Sidebar from "./components/Sidebar";
-import "./styles/utils.css";
 import { useRef } from "react";
+import "./styles/utils.css";
+import Sidebar from "./components/Sidebar";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Stack from "./pages/Stack";
 
 function App() {
 
-  const aboutRef = useRef<HTMLInputElement | null>(null);
-  const experienceRef = useRef<HTMLInputElement | null>(null);
-  const projectsRef = useRef<HTMLInputElement | null>(null);
-  const stackRef = useRef<HTMLInputElement | null>(null);
+    const aboutRef = useRef<HTMLInputElement | null>(null);
+    const experienceRef = useRef<HTMLInputElement | null>(null);
+    const projectsRef = useRef<HTMLInputElement | null>(null);
+    const stackRef = useRef<HTMLInputElement | null>(null);
 
-  const scrollToSection = (ref: HTMLElement | null) => {
-    ref?.scrollIntoView({ behavior: "smooth"})
-  }
+    const scrollToSection = (ref: HTMLElement | null) => {
+        ref?.scrollIntoView({ behavior: "smooth"})
+    }
 
     return (
       <>
@@ -19,40 +23,27 @@ function App() {
         {/* Sidebar */}
         <Sidebar
           scrollToSection={scrollToSection}
-          refs = {{ about: aboutRef, experience: experienceRef, projects: projectsRef, stack: stackRef }}
+          refs={{ about: aboutRef, experience: experienceRef, projects: projectsRef, stack: stackRef }}
         />
 
         {/* Main Content */}
-        <div className="w-9/10">
-          {/* About Section */}
-          <section
-            className="border-2 border-white text-white h-screen"
-            ref={aboutRef}
-          >
-            <h1>About</h1>
-          </section>
-          {/* Experience Section */}
-          <section
-            className="border-2 border-white text-white h-screen"
-            ref={experienceRef}
-          >
-            <h1>Experience</h1>
-          </section>
-          {/* Projects Section */}
-          <section
-            className="border-2 border-white text-white h-screen"
-            ref={projectsRef}
-          >
-            <h1>Projects</h1>
-          </section>
-          {/* Stack Section */}
-          <section
-            className="border-2 border-white text-white h-screen"
-            ref={stackRef}
-          >
-            <h1>Stack</h1>
-          </section>
-          
+        <div className="w-9/10 ml-[10%]">
+            {/* About Section */}
+            <About
+                aboutRef={aboutRef}
+            />
+            {/* Experience Section */}
+            <Experience
+                experienceRef={experienceRef}
+            />
+            {/* Projects Section */}
+            <Projects
+                projectsRef={projectsRef}
+            />
+            {/* Stack Section */}
+            <Stack
+                stackRef={stackRef}
+            />
         </div>
       </div>
       </>
