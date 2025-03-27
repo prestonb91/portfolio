@@ -6,7 +6,6 @@ function Experience({ experienceRef } : ExperienceProps) {
     <>
         {/* Main Content */}
         <div
-            className="border-2 border-white text-white h-screen"
             ref={experienceRef}
         >
             <h1>Experience</h1>

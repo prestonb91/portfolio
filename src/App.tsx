@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./styles/utils.css";
+import "./styles/styles.css";
 import Sidebar from "./components/Sidebar";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
@@ -19,7 +19,7 @@ function App() {
 
     return (
       <>
-      <div className="flex">
+      <div className="container">
         {/* Sidebar */}
         <Sidebar
           scrollToSection={scrollToSection}
@@ -27,7 +27,7 @@ function App() {
         />
 
         {/* Main Content */}
-        <div className="w-9/10 ml-[10%]">
+        <div className="main-content">
             {/* About Section */}
             <About
                 aboutRef={aboutRef}

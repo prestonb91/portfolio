@@ -1,4 +1,4 @@
-import StackProps from "../types/utils"
+import { StackProps } from "../types/utils"
 
 function Stack({ stackRef } : StackProps) {
 
@@ -6,7 +6,6 @@ function Stack({ stackRef } : StackProps) {
     <>
         {/* Main Content */}
         <div
-            className="border-2 border-white text-white h-screen"
             ref={stackRef}
         >
             <h1>Stack</h1>

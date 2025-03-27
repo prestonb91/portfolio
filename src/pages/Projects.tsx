@@ -6,7 +6,6 @@ function Projects({ projectsRef } : ProjectsProps) {
     <>
         {/* Main Content */}
         <div
-            className="border-2 border-white text-white h-screen"
             ref={projectsRef}
         >
             <h1>Projects</h1>
