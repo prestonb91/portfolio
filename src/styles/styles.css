@@ -167,6 +167,7 @@
 
 .projects-body {
     margin-top: 7.5%;
+    margin-bottom: 7.5%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -229,3 +230,28 @@
     padding: 5px;
     width: 10%;
 }
+
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-height: 100vh;
+}
+
+.stack-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+
+.stack-section {
+    flex: 1;
+    border: solid;
+}
+
+.stack-item {
+    border: solid;
+}
+
+

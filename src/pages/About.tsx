@@ -27,7 +27,7 @@ function About({ aboutRef } : AboutProps) {
                 <div>
                     <img
                         className="profile-image"
-                        src="src/assets/profilePicture.jpg" 
+                        src="src/assets/profile-picture.jpg" 
                         alt="Profile Picture"
                     />
                 </div>
