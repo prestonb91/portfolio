@@ -7,8 +7,8 @@
 .main-content {
     flex-grow: 1;
     margin-left: 10vw;
-    border: 2px solid white;
     overflow-y: auto;
+    height: 100vh;
 }
 
 .sidebar {
@@ -42,20 +42,110 @@
 }
 
 .about-container {
+    border: solid white;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 100vh;
+}
+
+.about-body {
     display: flex;
     flex-direction: column;
-    color: white;
+    justify-content: center;
+    padding: 50px 50px;
+    width: 55%;
 }
 
 .about-header {
-    font-size: 3rem;
+    font-size: 5rem;
+    margin-bottom: 10px;
 }
 
 .about-intro {
     font-size: 2rem;
+    margin-top: 10px;
 }
 
-.profile-picture {
+.profile-picture-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    margin-left: 50px;
     width: 25vw;
     height: 25hw;
+    border-radius: 10%;
 }
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+}
+
+.experience-header {
+    font-size: 5rem;
+    margin: 20px 20px;
+}
+
+.experience-body {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 20vw;
+    height: 60vh;
+    padding: 10px; 
+}
+
+.experience-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.experience-card-bottom {
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.experience-card-title {
+    text-align: center;
+}
+
+.experience-card-description {
+    margin-bottom: auto;
+}
+
+.experience-stack-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experience-stack {
+    background-color: aqua;
+    border: solid;
+}
+
+.experience-site-link-container {
+    margin-top: auto;
+}
+
+/* .experience-site-link {
+    border: solid;
+} */
