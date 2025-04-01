@@ -28,18 +28,18 @@ function Experience({ experienceRef } : ExperienceProps) {
                     />
                     <div className="experience-card-bottom">
                         <h2 className="experience-card-title">Discover Nikke</h2>
+                        <div className="experience-stack-container">
+                            {discoverNikkeiStack.map(stack => 
+                                <div className="experience-stack">{stack}</div>
+                            )}
+                        </div>
                         <div 
                             className="experience-card-description"
                         >
                             Develop and maintain community website of stories and news of Nikkei (Japanese descendants) culture.
                         </div>
-                        <div className="experience-stack-container">
-                        {discoverNikkeiStack.map(stack => 
-                            <div className="experience-stack">{stack}</div>
-                        )}
-                        </div>
                         <div className="experience-site-link-container">
-                            <div className="experience-site-link">Site</div>
+                            <div className="experience-site-link">Visit Site</div>
                         </div>
                     </div>
                 </div>
@@ -54,18 +54,18 @@ function Experience({ experienceRef } : ExperienceProps) {
                     />
                     <div className="experience-card-bottom">
                         <h2 className="experience-card-title">Find a Doc</h2>
+                        <div className="experience-stack-container">
+                            {findadocStack.map(stack => 
+                                <div className="experience-stack">{stack}</div>
+                            )}
+                        </div>
                         <div 
                             className="experience-card-description"
                         >
                             Develop and maintain health service information for international community in Japan.
                         </div>
-                        <div className="experience-stack-container">
-                        {findadocStack.map(stack => 
-                            <div className="experience-stack">{stack}</div>
-                        )}
-                        </div>
                         <div className="experience-site-link-container">
-                            <div className="experience-site-link">Site</div>
+                            <div className="experience-site-link">Visit Site</div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ function Experience({ experienceRef } : ExperienceProps) {
                         )}
                         </div>
                         <div className="experience-site-link-container">
-                            <div className="experience-site-link">Site</div>
+                            <div className="experience-site-link">Visit Site</div>
                         </div>
                     </div>
                 </div> */}

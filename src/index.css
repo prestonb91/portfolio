@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #2F2F2F;
+    /* background-color: #2F2F2F; */
+    background: #181818;
+    color: #E0E0E0; 
 }
 
 /* :root {
