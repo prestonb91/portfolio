@@ -10,6 +10,17 @@ body {
     color: #E0E0E0; 
 }
 
+/* anchor tag reset */
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent */
+  background: none; /* Removes any background */
+  border: none; /* Removes any border */
+  outline: none; /* Removes focus outline */
+  font: inherit; /* Ensures it uses the same font as surrounding text */
+  cursor: pointer; /* Keeps it clickable */
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
