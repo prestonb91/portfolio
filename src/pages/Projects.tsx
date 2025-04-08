@@ -23,7 +23,7 @@ function Projects({ projectsRef } : ProjectsProps) {
                         alt="Profile Picture"
                     />
                     <div className="projects-card-right">
-                        <h2 className="projects-card-title">Discover Nikke</h2>
+                        <h2 className="projects-card-title">Breeze</h2>
                         <div className="projects-stack-container">
                             {breezeStack.map(stack => 
                                 <div className="projects-stack">{stack}</div>
@@ -32,31 +32,7 @@ function Projects({ projectsRef } : ProjectsProps) {
                         <div 
                             className="projects-card-description"
                         >
-                            Develop and maintain community website of stories and news of Nikkei (Japanese descendants) culture.
-                        </div>
-                        <div className="projects-site-link">Visit Site</div>
-                    </div>
-                </div>
-                {/* Pelican */}
-                <div 
-                    className="projects-card"
-                >
-                    <img
-                        className="projects-card-image"
-                        src="src/assets/discover-nikkei.jpg" 
-                        alt="Profile Picture"
-                    />
-                    <div className="projects-card-right">
-                        <h2 className="projects-card-title">Discover Nikke</h2>
-                        <div className="projects-stack-container">
-                            {breezeStack.map(stack => 
-                                <div className="projects-stack">{stack}</div>
-                            )}
-                        </div>
-                        <div 
-                            className="projects-card-description"
-                        >
-                            Develop and maintain community website of stories and news of Nikkei (Japanese descendants) culture.
+                            ‬‭ Attendance management system with approval and employee mgmt. systems, using calendar plug-in.
                         </div>
                         <div className="projects-site-link">Visit Site</div>
                     </div>
