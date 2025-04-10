@@ -2,7 +2,7 @@ import { ProjectsProps } from "../types/utils"
 
 function Projects({ projectsRef } : ProjectsProps) {
 
-    const breezeStack = ["Django", "Python", "AWS", "PostgreSQL"];
+    const breezeStack = ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"];
 
     return (
     <>
@@ -32,7 +32,7 @@ function Projects({ projectsRef } : ProjectsProps) {
                         <div 
                             className="projects-card-description"
                         >
-                            ‬‭ Attendance management system with approval and employee mgmt. systems, using calendar plug-in.
+                            ‬‭ Attendance management system with approval and employee mgmt. systems, using calendar plug-in
                         </div>
                         <div className="projects-site-link">Visit Site</div>
                     </div>
