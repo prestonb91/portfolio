@@ -1,8 +1,8 @@
 function ExperienceCard ({ title, image, stack, description, link, repo }: {title: string, image: string, stack: string[], description: string, link: string, repo: string}) {
 
     return(
-        <div 
-        className="experience-card"
+    <div 
+    className="experience-card"
     >
         <img
             className="experience-card-image"

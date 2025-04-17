@@ -187,10 +187,10 @@
 }
 
 .experience-site-link {
+    background: transparent;
     display: inline-flex;
     color: white;
-    background: transparent;
-    gap: .5rem;
+    gap: .7rem;
 }
 
 .experience-site-link-icon {
@@ -223,24 +223,69 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 170px;
 }
 
 .project-card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     overflow: hidden;
-    width: 70vw;
-    height: 40vh;
-    padding: 20px;
+    width: 80%;
+    height: 40%;
+    overflow: visible;
+    position: relative;
 }
 
+/* Top-right corner */
+.project-card::before,
+.project-card::after,
+.project-card .corner-bl::before,
+.project-card .corner-bl::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+/* Top-right corner */
+.project-card::before {
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 2px; /* Top horizontal line */
+}
+
+.project-card::after {
+  top: 0;
+  right: 0;
+  width: 2px; /* Right vertical line */
+  height: 40px;
+}
+
+/* Bottom-left corner */
+.project-card .corner-bl::before {
+    bottom: -5px; /* Adjust to move the line outside */
+    left: -10px; /* Adjust to move the line outside */
+    width: 40px;
+    height: 2px; /* Bottom horizontal line */
+  }
+  
+  .project-card .corner-bl::after {
+    bottom: -5px; /* Adjust to move the line outside */
+    left: -10px; /* Adjust to move the line outside */
+    width: 2px; /* Bottom vertical line */
+    height: 40px;
+  }
+  
+  /* Ensure the card content is above the corners */
+  .project-card-image {
+    width: 50%;
+    object-fit: contain;
+  }
+
 .project-card-image {
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%);
+    width: 50%;
+    object-fit: contain;
 }
 
 .project-card-right {
@@ -259,6 +304,7 @@
 .project-stack-container {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .project-stack {
@@ -274,14 +320,26 @@
 }
 
 .project-card-description {
-    /* margin-bottom: auto; */
+    flex-wrap: wrap;
+}
+
+.project-site-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    gap: 1.5rem;
 }
 
 .project-site-link {
+    display: inline-flex;
     background: transparent;
     text-align: center;
-    width: 15%;
-    margin-top: auto;
+    gap: .7rem;
+}
+
+.project-site-link-icon {
+    height: 30px;
+    width: 30px;
 }
 
 .stack-container {
