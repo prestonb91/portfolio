@@ -4,14 +4,14 @@ import Sidebar from "./components/Sidebar";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
-import Stack from "./pages/Stack";
+import Skills from "./pages/Skills";
 
 function App() {
 
     const aboutRef = useRef<HTMLInputElement | null>(null);
     const experienceRef = useRef<HTMLInputElement | null>(null);
     const projectsRef = useRef<HTMLInputElement | null>(null);
-    const stackRef = useRef<HTMLInputElement | null>(null);
+    const skillsRef = useRef<HTMLInputElement | null>(null);
 
     const scrollToSection = (ref: HTMLElement | null) => {
         ref?.scrollIntoView({ behavior: "smooth"})
@@ -23,7 +23,7 @@ function App() {
         {/* Sidebar */}
         <Sidebar
           scrollToSection={scrollToSection}
-          refs={{ about: aboutRef, experience: experienceRef, projects: projectsRef, stack: stackRef }}
+          refs={{ about: aboutRef, experience: experienceRef, projects: projectsRef, skills: skillsRef }}
         />
 
         {/* Main Content */}
@@ -40,9 +40,9 @@ function App() {
             <Projects
                 projectsRef={projectsRef}
             />
-            {/* Stack Section */}
-            <Stack
-                stackRef={stackRef}
+            {/* Skills Section */}
+            <Skills
+                skillsRef={skillsRef}
             />
         </div>
       </div>

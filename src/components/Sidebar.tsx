@@ -22,8 +22,8 @@ function Sidebar( {scrollToSection, refs} : SidebarProps ) {
                 <hr className="sidebar-hr"/>
                 <button 
                     className="sidebar-button"
-                    onClick={()=>scrollToSection(refs.stack.current)}
-                >Stack</button>
+                    onClick={()=>scrollToSection(refs.skills.current)}
+                >Skills</button>
             </div>
         </>
     )

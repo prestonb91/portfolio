@@ -86,7 +86,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .header {
@@ -249,15 +249,15 @@
 
 /* Top-right corner */
 .project-card::before {
-  top: 0;
-  right: 0;
+  top: -5px;
+  right: -10px;
   width: 40px;
   height: 2px; /* Top horizontal line */
 }
 
 .project-card::after {
-  top: 0;
-  right: 0;
+  top: -5px;
+  right: -10px;
   width: 2px; /* Right vertical line */
   height: 40px;
 }
@@ -342,27 +342,76 @@
     width: 30px;
 }
 
-.stack-container {
+/* TODO: REVIEW */
+@media (max-width: 900px) {
+    .project-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;  /* Adjust gap between project cards */
+    }
+
+    .project-card {
+        width: 80%;
+        flex-direction: column;  /* Change flex direction to column */
+        height: auto; /* Allow card to adjust height based on content */
+    }
+
+    .project-card-image {
+        width: 100%;  /* Full width image on mobile */
+        height: 50%;  /* Keep the image height consistent */
+        object-fit: cover;
+    }
+
+    .project-card-right {
+        margin-left: 0;  /* Remove left margin on mobile */
+        margin-top: 10px;  /* Add some spacing between the image and content */
+    }
+}
+
+.skill-container {
     display: flex;
     flex-direction: column;
     color: white;
     min-height: 100vh;
 }
 
-.stack-body {
+.skill-body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border: solid;
 }
 
-.stack-section {
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
     flex: 1;
-    border: solid;
+    font-size: 2.5rem;
 }
 
-.stack-item {
-    border: solid;
+.skill-item-container {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.skill-item {
+    color: white;
+    border: 1.5px solid white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 6px 18px; 
+    border-radius: 50px; 
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+}
+
+/* .experience-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 

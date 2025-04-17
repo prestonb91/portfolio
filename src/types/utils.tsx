@@ -6,7 +6,7 @@ export interface SidebarProps {
         about: RefObject<HTMLInputElement | null>;
         experience: RefObject<HTMLInputElement| null>;
         projects: RefObject<HTMLInputElement| null>;
-        stack: RefObject<HTMLInputElement| null>;
+        skills: RefObject<HTMLInputElement| null>;
     }
 }
 
@@ -22,6 +22,6 @@ export interface ProjectsProps {
     projectsRef: RefObject<HTMLInputElement | null>;
 }
 
-export interface StackProps {
-    stackRef: RefObject<HTMLInputElement | null>;
+export interface SkillsProps {
+    skillsRef: RefObject<HTMLInputElement | null>;
 }
