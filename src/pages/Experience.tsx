@@ -8,8 +8,8 @@ function Experience({ experienceRef } : ExperienceProps) {
         image: "src/assets/discover-nikkei.jpg",
         stack: ["Django", "Python", "AWS", "PostgreSQL"],
         description: "Develop and maintain community website of stories and news of Nikkei (Japanese descendants) culture.",
-        link: "",
-        repo: "",
+        link: "https://discovernikkei.org/en/",
+        repo: "https://github.com/jamuseum",
     }
     
     const findadoc = {
@@ -17,8 +17,8 @@ function Experience({ experienceRef } : ExperienceProps) {
         image: "src/assets/findadoc.jpeg",
         stack: ["Vue", "Typescript", "Nuxt", "Node.js", "Pinia"],
         description: "Develop and maintain health service information for international community in Japan.",
-        link: "",
-        repo: "",
+        link: "https://www.findadoc.jp/",
+        repo: "https://github.com/ourjapanlife",
     }
 
     return (
@@ -28,13 +28,14 @@ function Experience({ experienceRef } : ExperienceProps) {
             className="experience-container"
             ref={experienceRef}
         >
+            {/* Experience */}
             <h1 className="header">Experience</h1>
             <div
                 className="experience-body"
             >
-                {/* Discover Nikke Experience */}
+                {/* Discover Nikke */}
                 <ExperienceCard {...discoverNikkei} />
-                {/* Findadoc Experience */}
+                {/* Findadoc */}
                 <ExperienceCard {...findadoc} />
             </div>
         </div>

@@ -154,7 +154,7 @@
 } */
 
 .experience-card-title {
-    font-size: 2.2em;
+    font-size: 2.2rem;
 }
 
 .experience-stack-container {
@@ -171,24 +171,26 @@
     color: white;
     padding: 6px 18px; 
     border-radius: 50px; 
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
     overflow: hidden;
-}
-
-.experience-site-link-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
 }
 
 .experience-card-description {
     margin-bottom: auto;
 }
 
+.experience-site-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    gap: 1.5rem;
+}
+
 .experience-site-link {
+    display: inline-flex;
     color: white;
     background: transparent;
-    width: 30%;
+    gap: .5rem;
 }
 
 .experience-site-link-icon {
@@ -196,14 +198,24 @@
     width: 30px;
 }
 
-.projects-container {
+.project-container {
     display: flex;
     flex-direction: column;
     color: white;
     min-height: 100vh;
 }
 
-.projects-body {
+@media (max-width: 900px) {
+    .experience-body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experience-card {
+        width: 50%;
+    }
+}
+
+.project-body {
     margin-top: 7.5%;
     margin-bottom: 7.5%;
     flex: 1;
@@ -214,7 +226,7 @@
     gap: 170px;
 }
 
-.projects-card {
+.project-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -224,14 +236,14 @@
     padding: 20px;
 }
 
-.projects-card-image {
+.project-card-image {
     width: 45%;
     height: 100%;
     object-fit: cover;
     clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%);
 }
 
-.projects-card-right {
+.project-card-right {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -240,16 +252,16 @@
     gap: 15px;
 }
 
-.projects-card-title {
+.project-card-title {
     font-size: 4rem;
 }
 
-.projects-stack-container {
+.project-stack-container {
     display: flex;
     gap: 10px;
 }
 
-.projects-stack {
+.project-stack {
     color: white;
     border: 1.5px solid white;
     font-size: 1rem;
@@ -257,15 +269,15 @@
     color: white;
     padding: 6px 18px; 
     border-radius: 50px; 
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
     overflow: hidden;
 }
 
-.projects-card-description {
+.project-card-description {
     /* margin-bottom: auto; */
 }
 
-.projects-site-link {
+.project-site-link {
     background: transparent;
     text-align: center;
     width: 15%;

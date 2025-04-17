@@ -12,8 +12,8 @@ function ExperienceCard ({ title, image, stack, description, link, repo }: {titl
         <div className="experience-card-bottom">
             <h2 className="experience-card-title">{title}</h2>
             <div className="experience-stack-container">
-                {stack.map(stack => 
-                    <div className="experience-stack">{stack}</div>
+                {stack.map((stack, index) => 
+                    <div className="experience-stack" key={index}>{stack}</div>
                 )}
             </div>
             <div 
@@ -21,24 +21,25 @@ function ExperienceCard ({ title, image, stack, description, link, repo }: {titl
             >
                 {description}
             </div>
-            <div className="experience-site-link-container">
+            <div 
+                className="experience-site-link-container"
+            > 
                 <a 
                     href={link} 
                     className="experience-site-link"
-                >
-                    Visit Site <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
+                > View Site
+                    <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
                 </a>
                 <div 
                     className="experience-site-link"
-                >
-                    <a href={repo}>Visit Repo 
+                > View Repo
+                    <a href={repo}>
                         <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
     )
 }
 

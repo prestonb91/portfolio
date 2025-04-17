@@ -1,8 +1,16 @@
-import { ProjectsProps } from "../types/utils"
+import { ProjectsProps } from "../types/utils";
+import ProjectCard from "../components/ProjectCard";
 
 function Projects({ projectsRef } : ProjectsProps) {
 
-    const breezeStack = ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"];
+    const breeze = {
+        title: "Breeze",
+        image: "src/assets/discover-nikkei.jpg",
+        stack: ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"],
+        description: "Attendance management system with approval and employee mgmt. systems, using calendar plug-in",
+        link: "",
+        repo: "",
+    }
 
     return (
     <>
@@ -11,32 +19,11 @@ function Projects({ projectsRef } : ProjectsProps) {
             className="projects-container"
             ref={projectsRef}
         >
+            {/* Projects */}
             <h1 className="header">Projects</h1>
             <div className="projects-body">
-                {/* Breeze */}
-                <div 
-                    className="projects-card"
-                >
-                    <img
-                        className="projects-card-image"
-                        src="src/assets/discover-nikkei.jpg" 
-                        alt="Profile Picture"
-                    />
-                    <div className="projects-card-right">
-                        <h2 className="projects-card-title">Breeze</h2>
-                        <div className="projects-stack-container">
-                            {breezeStack.map(stack => 
-                                <div className="projects-stack">{stack}</div>
-                            )}
-                        </div>
-                        <div 
-                            className="projects-card-description"
-                        >
-                            ‬‭ Attendance management system with approval and employee mgmt. systems, using calendar plug-in
-                        </div>
-                        <div className="projects-site-link">Visit Site</div>
-                    </div>
-                </div>
+                {/* Breeze*/}
+                <ProjectCard {...breeze}/>
             </div>
         </div>
     </>
