@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import LocalButton from "./components/LocaleButton";
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
 
         {/* Main Content */}
         <div className="main-content">
+            {/* LocaleButton */}
+            <LocalButton />
             {/* About Section */}
             <About
                 aboutRef={aboutRef}

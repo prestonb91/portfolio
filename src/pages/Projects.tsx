@@ -24,8 +24,17 @@ function Projects({ projectsRef } : ProjectsProps) {
     const receiptReader = {
         title: "Receipt Reader",
         image: "",
-        stack: ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"],
-        description: "Website to test receipt reading with Google OCR.",
+        stack: ["React", "Typescript", "Google OCR"],
+        description: "A text processing component using Google OCR as a test for backoffice systems such as expense reading.",
+        link: "",
+        repo: "https://github.com/prestonb91/expense-submitter",
+    }
+
+    const mockInterviews = {
+        title: "Mock Interviews",
+        image: "",
+        stack: ["React", "Javascript"],
+        description: "A collection of mock interviews mostly consisting of React frontend and Leetcode solutions.",
         link: "",
         repo: "https://github.com/prestonb91/expense-submitter",
     }
@@ -46,6 +55,8 @@ function Projects({ projectsRef } : ProjectsProps) {
                 <ProjectCard {...llamaLlama}/>
                 {/* Receipt Reader*/}
                 <ProjectCard {...receiptReader}/>
+                {/* Receipt Reader*/}
+                <ProjectCard {...mockInterviews}/>
             </div>
         </div>
     </>

@@ -1,11 +1,36 @@
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+
 function LocaleButton() {
 
-    return (
+    const [selectedLocale, setSelectedLocale] = useState('en');
+
+    const { i18n } = useTranslation();
+
+    const handleSwitch = (language: string) => {
+        i18n.changeLanguage(language);
+        setSelectedLocale(language)
+    };
+
+    return(
         <>
-            <div>Testing</div>
+            <div className='locale-button-container'>
+                <button
+                    className={`locale-button ${selectedLocale === 'en' ? 'selected' : 'unselected'}`}
+                    onClick={()=>handleSwitch('en')}
+                >
+                    EN
+                </button>
+                <div className="locale-divider"></div>
+                <button
+                    className={`locale-button ${selectedLocale === 'jp' ? 'selected' : 'unselected'}`}
+                    onClick={()=>handleSwitch('jp')}
+                >
+                    JP
+                </button>
+            </div>
         </>
     )
-
 }
 
 export default LocaleButton

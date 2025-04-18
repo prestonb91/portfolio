@@ -1,6 +1,8 @@
 import { AboutProps } from "../types/utils";
+import { useTranslation } from 'react-i18next';
 
 function About({ aboutRef } : AboutProps) {
+    const { t } = useTranslation();
 
     return (
     <>
@@ -13,7 +15,7 @@ function About({ aboutRef } : AboutProps) {
             <div className="about-body">
                 {/* Name Header */}
                 <h1 className="about-header">
-                    <div>Preston Boardman</div>
+                    <div>{t('about.name')}</div>
                     <div>Full Stack Developer</div>
                 </h1>
                 <hr></hr>

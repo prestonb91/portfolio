@@ -68,6 +68,37 @@
     height: 3.5rem;
 }
 
+.locale-button-container {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+.locale-divider {
+    width: 1px;
+    height: 24px;
+    background-color: white;
+}
+
+.locale-button {
+    font-size: 1.4rem;
+    border-radius: 10%;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.locale-button.selected {
+    color: white;  
+}
+
+.locale-button.unselected {
+    color: grey;  
+}
+
 .about-container {
     display: flex;
     flex-direction: row;
