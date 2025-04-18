@@ -5,7 +5,7 @@ function Projects({ projectsRef } : ProjectsProps) {
 
     const breeze = {
         title: "Breeze",
-        image: "src/assets/breeze-demo.mp4",
+        image: "/assets/breeze-demo.mp4",
         stack: ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"],
         description: "Attendance management system with approval and employee mgmt. systems, using calendar plug-in",
         link: "https://breezehr.netlify.app/landing",

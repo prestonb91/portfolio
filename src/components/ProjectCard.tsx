@@ -36,14 +36,14 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                     href={link}
                     className="project-site-link"
                 >
-                    <img src="src/assets/external-link.svg" className="project-site-link-icon" />
+                    <img src="/assets/external-link.svg" className="project-site-link-icon" />
                     Live
                 </a>
                 <a 
                     href={repo}
                     className="project-site-link"
                 >
-                    <img src="src/assets/external-link.svg" className="project-site-link-icon" />
+                    <img src="/assets/external-link.svg" className="project-site-link-icon" />
                     Repo
                 </a>
             </div>

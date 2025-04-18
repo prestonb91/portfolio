@@ -5,18 +5,18 @@ function Experience({ experienceRef } : ExperienceProps) {
 
     const discoverNikkei = {
         title: "Discover Nikkei",
-        image: "src/assets/discover-nikkei.jpg",
+        image: "/assets/discover-nikkei.jpg",
         stack: ["Django", "Python", "AWS", "PostgreSQL"],
-        description: "Develop and maintain community website of stories and news of Nikkei (Japanese descendants) culture.",
+        description: "Development and maintenance of community for stories of Nikkei (Japanese descendants) culture.",
         link: "https://discovernikkei.org/en/",
         repo: "https://github.com/jamuseum",
     }
     
     const findadoc = {
         title: "Find a Doc",
-        image: "src/assets/findadoc.jpeg",
+        image: "/assets/findadoc.jpeg",
         stack: ["Vue", "Typescript", "Nuxt", "Node.js", "Pinia"],
-        description: "Develop and maintain health service information for international community in Japan.",
+        description: "Development and maintenance of health service information for international community in Japan.",
         link: "https://www.findadoc.jp/",
         repo: "https://github.com/ourjapanlife",
     }

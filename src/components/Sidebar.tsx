@@ -34,10 +34,10 @@ function Sidebar( {scrollToSection, refs} : SidebarProps ) {
                 </button>
                 <div className="sidebar-link-container">
                     <a href="https://github.com/prestonb91">
-                        <img src="src/assets/github-icon.png" className="sidebar-link-icon" />
+                        <img src="/assets/github-icon.png" className="sidebar-link-icon" />
                     </a>
                     <a href="https://www.linkedin.com/in/preston-boardman-8210a671/" >
-                        <img src="src/assets/linkedin-icon.png" className="sidebar-link-icon" />
+                        <img src="/assets/linkedin-icon.png" className="sidebar-link-icon" />
                     </a>
                 </div>
             </div>

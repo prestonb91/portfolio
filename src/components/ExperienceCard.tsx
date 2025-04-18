@@ -1,3 +1,5 @@
+
+
 function ExperienceCard ({ title, image, stack, description, link, repo }: {title: string, image: string, stack: string[], description: string, link: string, repo: string}) {
 
     return(
@@ -22,14 +24,14 @@ function ExperienceCard ({ title, image, stack, description, link, repo }: {titl
                         href={link} 
                         className="experience-site-link"
                     > 
-                        <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
+                        <img src="/assets/external-link.svg" className="experience-site-link-icon" />
                         Site
                     </a>
                     <a 
                         href={repo}
                         className="experience-site-link"
                     >
-                        <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
+                        <img src="/assets/external-link.svg" className="experience-site-link-icon" />
                         Repo   
                     </a>
             </div>
