@@ -32,14 +32,17 @@ function App() {
             <About
                 aboutRef={aboutRef}
             />
+            <div className="section-divider"></div>
             {/* Experience Section */}
             <Experience
                 experienceRef={experienceRef}
             />
+            <div className="section-divider"></div>
             {/* Projects Section */}
             <Projects
                 projectsRef={projectsRef}
             />
+            <div className="section-divider"></div>
             {/* Skills Section */}
             <Skills
                 skillsRef={skillsRef}

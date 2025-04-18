@@ -4,6 +4,14 @@
     width: 100vw;
 }
 
+.section-divider {
+    width: 60%;
+    height: 0.25rem;
+    margin: 3rem auto;
+    background: linear-gradient(to right, transparent, gray, transparent);
+    opacity: 0.5;
+}
+
 .main-content {
     flex-grow: 1;
     margin-left: 10vw;
@@ -63,7 +71,6 @@
 .about-container {
     display: flex;
     flex-direction: row;
-    color: white;
     height: 100vh;
 }
 
@@ -100,13 +107,12 @@
 .experience-container {
     display: flex;
     flex-direction: column;
-    color: white;
     min-height: 100%;
 }
 
 .header {
     font-size: 5rem;
-    margin: 20px 50px;
+    margin: 2rem 3rem;
 }
 
 .experience-body {
@@ -214,7 +220,6 @@
 .project-container {
     display: flex;
     flex-direction: column;
-    color: white;
     min-height: 100vh;
 }
 
@@ -342,7 +347,6 @@
 .skill-container {
     display: flex;
     flex-direction: column;
-    color: white;
     min-height: 100vh;
 }
 

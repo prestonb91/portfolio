@@ -2,7 +2,7 @@ import { SkillsProps } from "../types/utils"
 
 function Skills({ skillsRef } : SkillsProps) {
 
-    const frontendSkills = ["Javascript", "Typescript", "HTML", "CSS", "Python", "React", "Vue", "Django", "Tailwind", "Python", "React", "Vue", "Django", "Tailwind"];
+    const frontendSkills = ["Javascript", "Typescript", "HTML", "CSS", "Python", "React", "Vue", "Django", "Tailwind"];
     const backendSkills = ["Express", "Node.js", "Firebase", "PostgreSQL", "Prisma", "Render", "Heroku", "Netlify"];
     const miscellaneous = ["Human Resources", "Project Management", "Miro", "Github", "JLPTN1"];
 
@@ -17,9 +17,7 @@ function Skills({ skillsRef } : SkillsProps) {
             <div className="skill-body">             
                 {/* Frontend Skills */}
                 <div className="skill-section"> 
-                    <div className="line" />
                     <h2 className="skill-title">Frontend</h2>
-                    <div className="line" />
                     <div className="skill-item-container">
                         {
                             frontendSkills.map((skill, index) => 
