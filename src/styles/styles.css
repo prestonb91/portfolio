@@ -45,6 +45,21 @@
     border: none;
 }
 
+.sidebar-link-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.sidebar-link-icon {
+    background-color: white;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+}
+
 .about-container {
     display: flex;
     flex-direction: row;
@@ -166,9 +181,7 @@
 .experience-stack {
     color: white;
     border: 1.5px solid white;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: white;
+    font-size: 1.1rem;
     padding: 6px 18px; 
     border-radius: 50px; 
     letter-spacing: 0.05rem;
@@ -237,55 +250,14 @@
     position: relative;
 }
 
-/* Top-right corner */
-.project-card::before,
-.project-card::after,
-.project-card .corner-bl::before,
-.project-card .corner-bl::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-}
-
-/* Top-right corner */
-.project-card::before {
-  top: -5px;
-  right: -10px;
-  width: 40px;
-  height: 2px; /* Top horizontal line */
-}
-
-.project-card::after {
-  top: -5px;
-  right: -10px;
-  width: 2px; /* Right vertical line */
-  height: 40px;
-}
-
-/* Bottom-left corner */
-.project-card .corner-bl::before {
-    bottom: -5px; /* Adjust to move the line outside */
-    left: -10px; /* Adjust to move the line outside */
-    width: 40px;
-    height: 2px; /* Bottom horizontal line */
-  }
-  
-  .project-card .corner-bl::after {
-    bottom: -5px; /* Adjust to move the line outside */
-    left: -10px; /* Adjust to move the line outside */
-    width: 2px; /* Bottom vertical line */
-    height: 40px;
-  }
-  
-  /* Ensure the card content is above the corners */
-  .project-card-image {
-    width: 50%;
-    object-fit: contain;
-  }
-
 .project-card-image {
-    width: 50%;
+    width: 55%;
     object-fit: contain;
+    border-style: solid;
+    padding-inline: 10px;
+    padding-block: 5px;
+    background-color: black;
+    border-color: gray;
 }
 
 .project-card-right {
@@ -310,8 +282,7 @@
 .project-stack {
     color: white;
     border: 1.5px solid white;
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     color: white;
     padding: 6px 18px; 
     border-radius: 50px; 
@@ -379,39 +350,50 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .skill-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: 10px;
+    width: 65%;
     flex: 1;
     font-size: 2.5rem;
+    padding-top: 1rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.skill-title {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .skill-item-container {
     display: flex;
-    gap: 1.2rem;
+    gap: 1.8rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .skill-item {
     color: white;
     border: 1.5px solid white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.7rem;
     color: white;
     padding: 6px 18px; 
     border-radius: 50px; 
     letter-spacing: 0.05rem;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* .experience-stack-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+.skill-item:hover {
+    transform: scale(1.1);
+  }
 
 

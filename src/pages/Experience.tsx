@@ -30,9 +30,7 @@ function Experience({ experienceRef } : ExperienceProps) {
         >
             {/* Experience */}
             <h1 className="header">Experience</h1>
-            <div
-                className="experience-body"
-            >
+            <div className="experience-body">
                 {/* Discover Nikke */}
                 <ExperienceCard {...discoverNikkei} />
                 {/* Findadoc */}

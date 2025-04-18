@@ -28,25 +28,23 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                     <div className="project-stack" key={index}>{stack}</div>
                 )}
             </div>
-            <div 
-                className="project-card-description"
-            >
+            <div className="project-card-description">
                 {description}
             </div>
-            <div
-                className="project-site-link-container"
-            >
+            <div className="project-site-link-container">
                 <a 
                     href={link}
                     className="project-site-link"
-                >Visit Site
+                >
                     <img src="src/assets/external-link.svg" className="project-site-link-icon" />
+                    Live
                 </a>
                 <a 
                     href={repo}
                     className="project-site-link"
-                >Visit Repo
+                >
                     <img src="src/assets/external-link.svg" className="project-site-link-icon" />
+                    Repo
                 </a>
             </div>
         </div>

@@ -2,9 +2,9 @@ import { SkillsProps } from "../types/utils"
 
 function Skills({ skillsRef } : SkillsProps) {
 
-    let frontendSkills = ["Vue", "React"];
-    let backendSkills = ["Vue", "React"];
-    let miscenllaneous = ["Vue", "React"];
+    const frontendSkills = ["Javascript", "Typescript", "HTML", "CSS", "Python", "React", "Vue", "Django", "Tailwind", "Python", "React", "Vue", "Django", "Tailwind"];
+    const backendSkills = ["Express", "Node.js", "Firebase", "PostgreSQL", "Prisma", "Render", "Heroku", "Netlify"];
+    const miscellaneous = ["Human Resources", "Project Management", "Miro", "Github", "JLPTN1"];
 
     return (
     <>
@@ -15,40 +15,39 @@ function Skills({ skillsRef } : SkillsProps) {
         >
             <h1 className="header">Skills</h1>
             <div className="skill-body">             
-                <div 
-                    className="skill-section"
-                > 
-                    <div className="skill-title">Frontend</div>
+                {/* Frontend Skills */}
+                <div className="skill-section"> 
+                    <div className="line" />
+                    <h2 className="skill-title">Frontend</h2>
+                    <div className="line" />
                     <div className="skill-item-container">
-                    {
-                        frontendSkills.map((skill, index) => 
-                            <div className="skill-item" key={index}>{skill}</div>
-                        )
-                    }
+                        {
+                            frontendSkills.map((skill, index) => 
+                                <div className="skill-item" key={index}>{skill}</div>
+                            )
+                        }
                     </div>
                 </div>
-                <div 
-                    className="skill-section"
-                > 
-                    <div className="skill-title">Backend</div>
+                {/* Backend Skills */}
+                <div className="skill-section"> 
+                    <h2 className="skill-title">Backend</h2>
                     <div className="skill-item-container">
-                    {
-                        frontendSkills.map((skill, index) => 
-                            <div className="skill-item" key={index}>{skill}</div>
-                        )
-                    }
+                        {
+                            backendSkills.map((skill, index) => 
+                                <div className="skill-item" key={index}>{skill}</div>
+                            )
+                        }
                     </div>
                 </div>
-                <div 
-                    className="skill-section"
-                > 
-                    <div className="skill-title">Miscellaneous</div>
+                {/* Miscellaneous Skills */}
+                <div className="skill-section"> 
+                    <h2 className="skill-title">Miscellaneous</h2>
                     <div className="skill-item-container">
-                    {
-                        frontendSkills.map((skill, index) => 
-                            <div className="skill-item" key={index}>{skill}</div>
-                        )
-                    }
+                        {
+                            miscellaneous.map((skill, index) => 
+                                <div className="skill-item" key={index}>{skill}</div>
+                            )
+                        }
                     </div>
                 </div>
             </div>

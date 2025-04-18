@@ -1,9 +1,7 @@
 function ExperienceCard ({ title, image, stack, description, link, repo }: {title: string, image: string, stack: string[], description: string, link: string, repo: string}) {
 
     return(
-    <div 
-    className="experience-card"
-    >
+    <div className="experience-card">
         <img
             className="experience-card-image"
             src={image}
@@ -16,27 +14,24 @@ function ExperienceCard ({ title, image, stack, description, link, repo }: {titl
                     <div className="experience-stack" key={index}>{stack}</div>
                 )}
             </div>
-            <div 
-                className="experience-card-description"
-            >
+            <div className="experience-card-description">
                 {description}
             </div>
-            <div 
-                className="experience-site-link-container"
-            > 
-                <a 
-                    href={link} 
-                    className="experience-site-link"
-                > View Site
-                    <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
-                </a>
-                <div 
-                    className="experience-site-link"
-                > View Repo
-                    <a href={repo}>
+            <div className="experience-site-link-container"> 
+                    <a 
+                        href={link} 
+                        className="experience-site-link"
+                    > 
                         <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
+                        Site
                     </a>
-                </div>
+                    <a 
+                        href={repo}
+                        className="experience-site-link"
+                    >
+                        <img src="src/assets/external-link.svg" className="experience-site-link-icon" />
+                        Repo   
+                    </a>
             </div>
         </div>
     </div>
