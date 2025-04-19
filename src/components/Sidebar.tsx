@@ -1,6 +1,8 @@
 import { SidebarProps } from "../types/utils";
+import { useTranslation } from 'react-i18next';
 
 function Sidebar( {scrollToSection, refs} : SidebarProps ) {
+    const { t } = useTranslation();
 
     return (
         <>
@@ -9,28 +11,28 @@ function Sidebar( {scrollToSection, refs} : SidebarProps ) {
                     className="sidebar-button"
                     onClick={()=>scrollToSection(refs.about.current)}
                 >
-                    About
+                    {t("sidebar.about")}
                 </button>
                 <hr className="sidebar-hr"/>
                 <button 
                     className="sidebar-button"
                     onClick={()=>scrollToSection(refs.experience.current)}
                 >
-                    Experience
+                    {t("sidebar.experience")}
                 </button>
                 <hr className="sidebar-hr"/>
                 <button 
                     className="sidebar-button"
                     onClick={()=>scrollToSection(refs.projects.current)}
                 >
-                    Projects
+                    {t("sidebar.projects")}
                 </button>
                 <hr className="sidebar-hr"/>
                 <button 
                     className="sidebar-button"
                     onClick={()=>scrollToSection(refs.skills.current)}
                 >
-                    Skills
+                    {t("sidebar.skills")}
                 </button>
                 <div className="sidebar-link-container">
                     <a href="https://github.com/prestonb91">

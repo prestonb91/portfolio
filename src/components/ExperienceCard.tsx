@@ -1,6 +1,7 @@
-
+import { useTranslation } from 'react-i18next';
 
 function ExperienceCard ({ title, image, stack, description, link, repo }: {title: string, image: string, stack: string[], description: string, link: string, repo: string}) {
+    const { t } = useTranslation();
 
     return(
     <div className="experience-card">
@@ -25,14 +26,14 @@ function ExperienceCard ({ title, image, stack, description, link, repo }: {titl
                         className="experience-site-link"
                     > 
                         <img src="/assets/external-link.svg" className="experience-site-link-icon" />
-                        Site
+                        {t("links.site")}
                     </a>
                     <a 
                         href={repo}
                         className="experience-site-link"
                     >
                         <img src="/assets/external-link.svg" className="experience-site-link-icon" />
-                        Repo   
+                        {t("links.repo")}
                     </a>
             </div>
         </div>

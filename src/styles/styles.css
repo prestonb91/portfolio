@@ -74,7 +74,7 @@
     gap: 0.5rem;
     top: 0;
     right: 0;
-    margin: 2rem;
+    margin: 2rem 3rem;
     z-index: 1;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .locale-button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-radius: 10%;
     color: white;
     background: none;

@@ -1,34 +1,38 @@
 import { ProjectsProps } from "../types/utils";
 import ProjectCard from "../components/ProjectCard";
+import { useTranslation } from 'react-i18next';
+
 
 function Projects({ projectsRef } : ProjectsProps) {
+    const { t } = useTranslation();
 
     const breeze = {
-        title: "Breeze",
+        title: t("projects.projects.breeze.title"),
         image: "/assets/breeze-demo.mp4",
-        stack: ["Vue", "Typescript", "Pinia", "Firebase", "Express", "Node.js", "Prisma", "PostgreSQL", ],
-        description: "A full stack attendance management system with employee management and manager approval system, using a calendar plug-in.",
+        stack: ["Vue", "Typescript", "Pinia", "Firebase", "Express", "Node.js", "Prisma", "PostgreSQL"],
+        description: t("projects.projects.breeze.description"),
         link: "https://breezehr.netlify.app/landing",
         repo: "https://github.com/breeze-hr",
     }
-
+    
     const receiptReader = {
-        title: "Receipt Reader",
+        title: t("projects.projects.receiptReader.title"),
         image: "/assets/receipt-reader-demo.mp4",
         stack: ["React", "Javascript", "Google OCR"],
-        description: "A simple component that extracts text from images using Google OCR to be used for backoffice systems such as receipt reading.",
+        description: t("projects.projects.receiptReader.description"),
         link: "",
         repo: "https://github.com/prestonb91/expense-submitter",
     }
-
+    
     const mockInterviews = {
-        title: "Mock Interviews Repo",
+        title: t("projects.projects.mockInterviews.title"),
         image: "/assets/react.png",
         stack: ["React", "Javascript"],
-        description: "A collection of mock interviews, consisting mostly of React frontend interview prompts.",
+        description: t("projects.projects.mockInterviews.description"),
         link: "",
         repo: "https://github.com/prestonb91/react-mock-interviews",
     }
+    
 
     return (
     <>

@@ -1,5 +1,73 @@
 {
-    "about": {
-      "name": "Preston Boardman"
+  "sidebar": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "links": {
+    "site": "Site",
+    "repo": "Repo",
+    "live": "Live"
+  },
+  "about": {
+    "name": "Preston Boardman",
+    "title": "Full Stack Developer",
+    "intro": "Hello, my name is Preston, a bilingual engineer interested in Full Stack Development and Game Development with a background in HR. Thank you for visiting my page!"
+  },
+  "experience": {
+    "header": "Experience",
+    "experience": {
+      "discoverNikkei": {
+        "title": "Discover Nikkei",
+        "description": "Development and maintenance of community for stories of Nikkei (Japanese descendants) culture."
+      },
+      "findadoc": {
+        "title": "Find a Doc",
+        "description": "Development and maintenance of health service information for international community in Japan."
+      },
+      "codeChrysalis": {
+        "title": "Code Chrysalis",
+        "description": "Finance DX and development of in-house expense management software."
+      }
+    }
+  },
+  "projects": {
+    "header": "Projects",
+    "projects": {
+      "breeze": {
+        "title": "Breeze",
+        "image": "/assets/breeze-demo.mp4",
+        "stack": ["Vue", "Typescript", "Pinia", "Firebase", "Express", "Node.js", "Prisma", "PostgreSQL"],
+        "description": "A full stack attendance management system with employee management and manager approval system, using a calendar plug-in.",
+        "link": "https://breezehr.netlify.app/landing",
+        "repo": "https://github.com/breeze-hr"
+      },
+      "receiptReader": {
+        "title": "Receipt Reader",
+        "image": "/assets/receipt-reader-demo.mp4",
+        "stack": ["React", "Javascript", "Google OCR"],
+        "description": "A simple component that extracts text from images using Google OCR to be used for backoffice systems such as receipt reading.",
+        "link": "",
+        "repo": "https://github.com/prestonb91/expense-submitter"
+      },
+      "mockInterviews": {
+        "title": "Mock Interviews Repo",
+        "image": "/assets/react.png",
+        "stack": ["React", "Javascript"],
+        "description": "A collection of mock interviews, consisting mostly of React frontend interview prompts.",
+        "link": "",
+        "repo": "https://github.com/prestonb91/react-mock-interviews"
+      }
+    }
+  },
+    "skills": {
+      "header": "Skills",
+      "section": {
+        "frontendTitle": "Frontend",
+        "backendTitle": "Backend",
+        "miscellaneousTitle": "Miscellaneous"
+      }
     }
 }
+

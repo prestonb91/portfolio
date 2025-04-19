@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
+
 function ProjectCard ({ title, image, stack, description, link, repo }: {title: string, image: string, stack: string[], description: string, link: string, repo: string}) {
+    const { t } = useTranslation();
 
     return(
     <div className="project-card">
@@ -37,14 +41,14 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                     className="project-site-link"
                 >
                     <img src="/assets/external-link.svg" className="project-site-link-icon" />
-                    Live
+                    {t("links.live")}
                 </a>
                 <a 
                     href={repo}
                     className="project-site-link"
                 >
                     <img src="/assets/external-link.svg" className="project-site-link-icon" />
-                    Repo
+                    {t("links.repo")}
                 </a>
             </div>
         </div>

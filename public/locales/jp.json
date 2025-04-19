@@ -1,5 +1,60 @@
 {
-    "about": {
-      "name": "ボードマン　プレストン悠一"
+  "sidebar": {
+    "about": "概要",
+    "experience": "経験",
+    "projects": "プロジェクト",
+    "skills": "スキル"
+  },
+  "links": {
+    "site": "サイト",
+    "repo": "リポジトリ",
+    "live": "ライブ"
+  },
+  "about": {
+    "name": "プレストン・ボードマン",
+    "title": "フルスタックエンジニア",
+    "intro": "こんにちは、私の名前はプレストンです。フルスタック開発とゲーム開発に興味があり、人事のバックグラウンドを持つバイリンガルエンジニアです。私のページに訪問していただきありがとうございます！"
+  },
+  "experience": {
+    "header": "経験",
+    "experience": {
+      "discoverNikkei": {
+        "title": "Discover Nikkei",
+        "description": "日系（日本の子孫）の文化に関するストーリーのコミュニティの開発と維持。"
+      },
+      "findadoc": {
+        "title": "Find a Doc",
+        "description": "日本の国際コミュニティ向けに健康サービス情報の開発と維持。"
+      },
+      "codeChrysalis": {
+        "title": "Code Chrysalis",
+        "description": "ファイナンスDXと社内経費管理ソフトウェアの開発。"
+      }
     }
+  },
+  "projects": {
+    "header": "プロジェクト",
+    "projects": {
+      "breeze": {
+        "title": "Breeze",
+        "description": "従業員管理とマネージャー承認システムを備えたフルスタックの出席管理システム。カレンダープラグインを使用。"
+      },
+      "receiptReader": {
+        "title": "Receipt Reader",
+        "description": "Google OCRを使用して画像からテキストを抽出する簡単なコンポーネント。領収書読み取りなどのバックオフィスシステムに使用。"
+      },
+      "mockInterviews": {
+        "title": "Mock Interviews Repo",
+        "description": "主にReactフロントエンドの面接問題で構成された模擬面接のコレクション。"
+      }
+    }
+  },
+  "skills": {
+    "header": "スキル",
+    "section": {
+      "frontendTitle": "フロントエンド",
+      "backendTitle": "バックエンド",
+      "miscellaneousTitle": "その他"
+    }
+  }
 }

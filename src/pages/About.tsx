@@ -16,12 +16,12 @@ function About({ aboutRef } : AboutProps) {
                 {/* Name Header */}
                 <h1 className="about-header">
                     <div>{t('about.name')}</div>
-                    <div>Full Stack Developer</div>
+                    <div>{t('about.title')}</div>
                 </h1>
                 <hr></hr>
                 {/* Intro Card */}
                 <div className="about-intro">
-                    Hello, my name is Preston, a bilingual engineer interested in Full Stack Development and Game Development with a background in HR. Thank you for visiting my page!
+                {t('about.intro')}
                 </div>
             </div>
             <div className="profile-picture-container">

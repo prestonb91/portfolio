@@ -1,31 +1,33 @@
 import { ExperienceProps } from "../types/utils"
 import ExperienceCard from "../components/ExperienceCard"
+import { useTranslation } from 'react-i18next';
 
 function Experience({ experienceRef } : ExperienceProps) {
+    const { t } = useTranslation();
 
     const discoverNikkei = {
-        title: "Discover Nikkei",
+        title: t("experience.experience.discoverNikkei.title"),
         image: "/assets/discover-nikkei.jpg",
         stack: ["Django", "Python", "AWS", "PostgreSQL"],
-        description: "Development and maintenance of community for stories of Nikkei (Japanese descendants) culture.",
+        description: t("experience.experience.discoverNikkei.description"),
         link: "https://discovernikkei.org/en/",
         repo: "https://github.com/jamuseum",
     }
-    
+
     const findadoc = {
-        title: "Find a Doc",
+        title: t("experience.experience.findadoc.title"),
         image: "/assets/findadoc.jpeg",
         stack: ["Vue", "Typescript", "Nuxt", "Pinia"],
-        description: "Development and maintenance of health service information for international community in Japan.",
+        description: t("experience.experience.findadoc.description"),
         link: "https://www.findadoc.jp/",
         repo: "https://github.com/ourjapanlife",
     }
 
     const codeChrysalis = {
-        title: "Code Chrysalis",
+        title: t("experience.experience.codeChrysalis.title"),
         image: "/assets/codechrysalis.png",
         stack: ["React", "Typescript", "Express", "Node.js", "Prisma", "PostgreSQL"],
-        description: "Finance DX and development of in-house expense management software.",
+        description: t("experience.experience.codeChrysalis.description"),
         link: "https://www.codechrysalis.io/",
         repo: "https://github.com/pelican-expense",
     }
