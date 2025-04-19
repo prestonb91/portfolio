@@ -15,10 +15,19 @@ function Experience({ experienceRef } : ExperienceProps) {
     const findadoc = {
         title: "Find a Doc",
         image: "/assets/findadoc.jpeg",
-        stack: ["Vue", "Typescript", "Nuxt", "Node.js", "Pinia"],
+        stack: ["Vue", "Typescript", "Nuxt", "Pinia"],
         description: "Development and maintenance of health service information for international community in Japan.",
         link: "https://www.findadoc.jp/",
         repo: "https://github.com/ourjapanlife",
+    }
+
+    const codeChrysalis = {
+        title: "Code Chrysalis",
+        image: "/assets/codechrysalis.png",
+        stack: ["React", "Typescript", "Express", "Node.js", "Prisma", "PostgreSQL"],
+        description: "Finance DX and development of in-house expense management software.",
+        link: "https://www.codechrysalis.io/",
+        repo: "https://github.com/pelican-expense",
     }
 
     return (
@@ -35,6 +44,8 @@ function Experience({ experienceRef } : ExperienceProps) {
                 <ExperienceCard {...discoverNikkei} />
                 {/* Findadoc */}
                 <ExperienceCard {...findadoc} />
+                {/* Code Chrysalis */}
+                <ExperienceCard {...codeChrysalis} />
             </div>
         </div>
     </>

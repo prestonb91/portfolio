@@ -6,37 +6,28 @@ function Projects({ projectsRef } : ProjectsProps) {
     const breeze = {
         title: "Breeze",
         image: "/assets/breeze-demo.mp4",
-        stack: ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"],
-        description: "Attendance management system with approval and employee mgmt. systems, using calendar plug-in",
+        stack: ["Vue", "Typescript", "Pinia", "Firebase", "Express", "Node.js", "Prisma", "PostgreSQL", ],
+        description: "A full stack attendance management system with employee management and manager approval system, using a calendar plug-in.",
         link: "https://breezehr.netlify.app/landing",
         repo: "https://github.com/breeze-hr",
     }
 
-    const llamaLlama = {
-        title: "Llama Llama",
-        image: "",
-        stack: ["Vue", "Typescript", "Firebase", "Prisma", "PostgreSQL", "Pinia"],
-        description: "Note taker for developers",
-        link: "",
-        repo: "https://github.com/prestonb91/expense-submitter",
-    }
-
     const receiptReader = {
         title: "Receipt Reader",
-        image: "",
-        stack: ["React", "Typescript", "Google OCR"],
-        description: "A text processing component using Google OCR as a test for backoffice systems such as expense reading.",
+        image: "/assets/receipt-reader-demo.mp4",
+        stack: ["React", "Javascript", "Google OCR"],
+        description: "A simple component that extracts text from images using Google OCR to be used for backoffice systems such as receipt reading.",
         link: "",
         repo: "https://github.com/prestonb91/expense-submitter",
     }
 
     const mockInterviews = {
-        title: "Mock Interviews",
-        image: "",
+        title: "Mock Interviews Repo",
+        image: "/assets/react.png",
         stack: ["React", "Javascript"],
-        description: "A collection of mock interviews mostly consisting of React frontend and Leetcode solutions.",
+        description: "A collection of mock interviews, consisting mostly of React frontend interview prompts.",
         link: "",
-        repo: "https://github.com/prestonb91/expense-submitter",
+        repo: "https://github.com/prestonb91/react-mock-interviews",
     }
 
     return (
@@ -51,8 +42,6 @@ function Projects({ projectsRef } : ProjectsProps) {
             <div className="project-body">
                 {/* Breeze*/}
                 <ProjectCard {...breeze}/>
-                {/* Llama Llama*/}
-                <ProjectCard {...llamaLlama}/>
                 {/* Receipt Reader*/}
                 <ProjectCard {...receiptReader}/>
                 {/* Receipt Reader*/}
