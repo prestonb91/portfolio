@@ -26,7 +26,7 @@ function Projects({ projectsRef } : ProjectsProps) {
 
     const llamaLlama = {
         title: t("projects.projects.llamaLlama.title"),
-        image: "/assets/react.png",
+        image: "/assets/llamaLlama.mp4",
         stack: ["React", "Javascript", "Express", "Node.js", "Knex", "PostgreSQL"],
         description: t("projects.projects.llamaLlama.description"),
         link: "https://llama-llama-lms-live.onrender.com/",
