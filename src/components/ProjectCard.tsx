@@ -36,6 +36,7 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                 {description}
             </div>
             <div className="project-site-link-container">
+                {link ? (
                 <a 
                     href={link}
                     className="project-site-link"
@@ -43,6 +44,8 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                     <img src="/assets/external-link.svg" className="project-site-link-icon" />
                     {t("links.live")}
                 </a>
+                ) : (null)}
+                {repo ? (
                 <a 
                     href={repo}
                     className="project-site-link"
@@ -50,6 +53,7 @@ function ProjectCard ({ title, image, stack, description, link, repo }: {title: 
                     <img src="/assets/external-link.svg" className="project-site-link-icon" />
                     {t("links.repo")}
                 </a>
+                ) : (null)}
             </div>
         </div>
     </div>

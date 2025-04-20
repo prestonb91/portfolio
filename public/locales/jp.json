@@ -1,6 +1,6 @@
 {
   "sidebar": {
-    "about": "概要",
+    "about": "プロフィール",
     "experience": "経験",
     "projects": "プロジェクト",
     "skills": "スキル"
@@ -11,20 +11,20 @@
     "live": "ライブ"
   },
   "about": {
-    "name": "プレストン・ボードマン",
+    "name": "ボードマン プレストン悠一",
     "title": "フルスタックエンジニア",
-    "intro": "こんにちは、私の名前はプレストンです。フルスタック開発とゲーム開発に興味があり、人事のバックグラウンドを持つバイリンガルエンジニアです。私のページに訪問していただきありがとうございます！"
+    "intro": "フルスタック開発とゲーム開発に興味があり、人事のバックグラウンドを持つバイリンガルエンジニアです。私のページに訪問していただきありがとうございます！"
   },
   "experience": {
     "header": "経験",
     "experience": {
       "discoverNikkei": {
         "title": "Discover Nikkei",
-        "description": "日系（日本の子孫）の文化に関するストーリーのコミュニティの開発と維持。"
+        "description": "日系の文化に関するコミュニティサイトの開発と維持。"
       },
       "findadoc": {
         "title": "Find a Doc",
-        "description": "日本の国際コミュニティ向けに健康サービス情報の開発と維持。"
+        "description": "国際コミュニティ向けの健康サービス情報の開発と維持。"
       },
       "codeChrysalis": {
         "title": "Code Chrysalis",
@@ -42,6 +42,10 @@
       "receiptReader": {
         "title": "Receipt Reader",
         "description": "Google OCRを使用して画像からテキストを抽出する簡単なコンポーネント。領収書読み取りなどのバックオフィスシステムに使用。"
+      },
+      "llamaLlama": {
+        "title": "Llama Llama",
+        "description": "カテゴリーを作成し、メモを保存できる、プログラマー向けのコンパニオンアプリ。"
       },
       "mockInterviews": {
         "title": "Mock Interviews Repo",

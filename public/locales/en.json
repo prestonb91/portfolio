@@ -37,27 +37,19 @@
     "projects": {
       "breeze": {
         "title": "Breeze",
-        "image": "/assets/breeze-demo.mp4",
-        "stack": ["Vue", "Typescript", "Pinia", "Firebase", "Express", "Node.js", "Prisma", "PostgreSQL"],
-        "description": "A full stack attendance management system with employee management and manager approval system, using a calendar plug-in.",
-        "link": "https://breezehr.netlify.app/landing",
-        "repo": "https://github.com/breeze-hr"
+        "description": "A full stack attendance management system with employee management and manager approval system, using a calendar plug-in."
       },
       "receiptReader": {
         "title": "Receipt Reader",
-        "image": "/assets/receipt-reader-demo.mp4",
-        "stack": ["React", "Javascript", "Google OCR"],
-        "description": "A simple component that extracts text from images using Google OCR to be used for backoffice systems such as receipt reading.",
-        "link": "",
-        "repo": "https://github.com/prestonb91/expense-submitter"
+        "description": "A simple component that extracts text from images using Google OCR to be used for backoffice systems such as receipt reading."
+      },
+      "llamaLlama": {
+        "title": "Llama Llama",
+        "description": "A companion app for aspiring programmers that can create categories and store notes."
       },
       "mockInterviews": {
         "title": "Mock Interviews Repo",
-        "image": "/assets/react.png",
-        "stack": ["React", "Javascript"],
-        "description": "A collection of mock interviews, consisting mostly of React frontend interview prompts.",
-        "link": "",
-        "repo": "https://github.com/prestonb91/react-mock-interviews"
+        "description": "A collection of mock interviews, consisting mostly of React frontend interview prompts."
       }
     }
   },

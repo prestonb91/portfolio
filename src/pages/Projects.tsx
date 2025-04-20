@@ -20,8 +20,17 @@ function Projects({ projectsRef } : ProjectsProps) {
         image: "/assets/receipt-reader-demo.mp4",
         stack: ["React", "Javascript", "Google OCR"],
         description: t("projects.projects.receiptReader.description"),
-        link: "",
+        link: "https://receipt-reader.netlify.app/",
         repo: "https://github.com/prestonb91/expense-submitter",
+    }
+
+    const llamaLlama = {
+        title: t("projects.projects.llamaLlama.title"),
+        image: "/assets/react.png",
+        stack: ["React", "Javascript", "Express", "Node.js", "Knex", "PostgreSQL"],
+        description: t("projects.projects.llamaLlama.description"),
+        link: "https://llama-llama-lms-live.onrender.com/",
+        repo: "https://github.com/Team-Llama-Llama",
     }
     
     const mockInterviews = {
@@ -44,11 +53,13 @@ function Projects({ projectsRef } : ProjectsProps) {
             {/* Projects */}
             <h1 className="header">Projects</h1>
             <div className="project-body">
-                {/* Breeze*/}
+                {/* Breeze */}
                 <ProjectCard {...breeze}/>
-                {/* Receipt Reader*/}
+                {/* Receipt Reader */}
                 <ProjectCard {...receiptReader}/>
-                {/* Receipt Reader*/}
+                {/* Llama Llama */}
+                <ProjectCard {...llamaLlama}/>
+                {/* Mock Interviews */}
                 <ProjectCard {...mockInterviews}/>
             </div>
         </div>
