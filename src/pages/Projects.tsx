@@ -21,7 +21,7 @@ function Projects({ projectsRef } : ProjectsProps) {
         stack: ["React", "Javascript", "Google OCR"],
         description: t("projects.projects.receiptReader.description"),
         link: "https://receipt-reader.netlify.app/",
-        repo: "https://github.com/prestonb91/expense-submitter",
+        repo: "https://github.com/prestonb91/receipt-ocr-web",
     }
 
     const llamaLlama = {
