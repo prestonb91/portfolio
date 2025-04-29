@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function LocaleButton() {
 
-    const [selectedLocale, setSelectedLocale] = useState('en');
+    const [selectedLocale, setSelectedLocale] = useState('jp');
 
     const { i18n } = useTranslation();
 
@@ -16,17 +16,17 @@ function LocaleButton() {
         <>
             <div className='locale-button-container'>
                 <button
-                    className={`locale-button ${selectedLocale === 'en' ? 'selected' : 'unselected'}`}
-                    onClick={()=>handleSwitch('en')}
-                >
-                    EN
-                </button>
-                <div className="locale-divider"></div>
-                <button
                     className={`locale-button ${selectedLocale === 'jp' ? 'selected' : 'unselected'}`}
                     onClick={()=>handleSwitch('jp')}
                 >
                     JP
+                </button>
+                <div className="locale-divider"></div>
+                <button
+                    className={`locale-button ${selectedLocale === 'en' ? 'selected' : 'unselected'}`}
+                    onClick={()=>handleSwitch('en')}
+                >
+                    EN
                 </button>
             </div>
         </>
