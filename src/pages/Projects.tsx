@@ -51,7 +51,7 @@ function Projects({ projectsRef } : ProjectsProps) {
             ref={projectsRef}
         >
             {/* Projects */}
-            <h1 className="header">Projects</h1>
+            <h1 className="header">{t("projects.header")}</h1>
             <div className="project-body">
                 {/* Breeze */}
                 <ProjectCard {...breeze}/>

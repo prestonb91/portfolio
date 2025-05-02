@@ -160,16 +160,14 @@
 }
 
 .experience-body {
-    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
 }
 
 .experience-card {
     width: 16rem;
-    height: 75%;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
